@@ -37,12 +37,17 @@
 			border: solid;
 			border-color: white;
 			padding: 2px;
+			width: 40%;
+			text-align:center;
+			position: relative;
+			left: 30%
 		}
 		#wisdom:hover {color: grey;}
 		ul, h4{text-align:center;
 			font-family: arial;
+			font-size: 14pt;
 		}
-		img{opacity: 1}
+		img{width:100%}
 	<!---	img:hover{opacity:1} -->
 		
 		#skills{position: relative;
@@ -57,7 +62,11 @@
 		left: 50%;
 		top: 900px;
 		}
-
+	<!--
+	#form{
+		width=40%;
+		position: relative;
+	}-->
 	</style>
 </head>
 <body>
@@ -71,7 +80,7 @@
 		</div>
 
 		<div id=heading>
-			<h1> HI, <br/> My Name is <span id=wisdom >OMODIAGBE WISDOM</span> <br/> I am a freelance software developer</h1>
+			<h1> HI, <br/> Click/Hover to see who I am <br/><div id=wisdom>OMODIAGBE WISDOM <br/> I am a freelance software developer</div></h1>
 		</div>
 	</div>
 	</header>
@@ -93,13 +102,7 @@
 			<li> Data Manipulation </li>
 		</ul>
 		</div> 
-		<div id=par>
-			<p>
-				I am available to create any software you might need. You can use the form in the <a href=#contact>contact section </a>
-			</p>
-			<p><strong> I look forward to working with you!!</strong> </p>
-	<!--		<p> You can check out my recent projects below or visit my github page</p> -->
-		</div>
+		
 	</div>
 	<hr/>
 	<!---
@@ -114,7 +117,17 @@
 		<p> E-Mail: wisdomosawale@gmail.com </p>
 		<p> Mobile Number: +2349136902798 </p>
 		<p> Github: Wizi007</p>
-		
+	<!---
+		<div id=form>
+		<form>
+			Name: <input type="text" name="name" value="Enter your name"/><br/><br/>
+			Mobile number: <input type="text" name="number" value="Enter your phone number"/><br/><br/>
+			Description: <br/>
+			<textarea name="description" rows="10" cols="40"> Describe software you would want me to help you create </textarea>
+			<input type="submit" value="submit">
+		</form>
+		</div>
+		-->
 	</div>
 </body>
 </html>
