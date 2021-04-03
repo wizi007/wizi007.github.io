@@ -1,90 +1,33 @@
 <html>
 <head>
-	
-	<style type="text/css">
-		#Navigations > a:link {color: #BBDDFF;
-			text-decoration: none;
-			}
-		#Navigations > a:hover{color:white;
-			font-family: arial;
-			font-size: 13pt;
-			}
-		div{
-			text-align: center;
-			}
-		#Navigations{width: 8%;
-			left: 90%;
-			position: fixed;
-			}
-		#heading{background-image: url(head.jpg);
-			padding: 35px;
-			background-repeat: no-repeat;
-			background-color: black;
-			}
-		h1{color: white;
-			font-family: arial;
-			font-size: 20pt;
-		}
-		p {
-			font-family: helvetica;
-		}
-		.pad {
-		padding: 0px 11% 10px 11%;
-		}
-		h3 {font-family:georgia;
-		}
-		#wisdom {color:black;
-			border: solid;
-			border-color: white;
-			padding: 2px;
-			width: 40%;
-			text-align:center;
-			position: relative;
-			left: 30%
-		}
-		#wisdom:hover {color: grey;}
-		ul, h4{text-align:center;
-			font-family: arial;
-			font-size: 14pt;
-		}
-		img{width:100%}
-	<!---	img:hover{opacity:1} -->
-		
-		#skills{position: relative;
-		left: 16%;
-		padding: 25px 6% 50px 6%;
-		background-color: #eeeeee;
-		width: 200px;
-		}
-		#par{
-		position: absolute;
-		width: 33%;
-		left: 50%;
-		top: 900px;
-		}
-	<!--
-	#form{
-		width=40%;
-		position: relative;
-	}-->
-	</style>
+	<link rel="stylesheet" type="text/css" href="portfolio.css"/>
 </head>
 <body>
 	<header>
-	<div>
-		
-		<div id=Navigations>
+		<nav>
 			<a href=#about>About Me</a><br/><br/>
 <!--			<a href=#projects>My Projects</a><br/><br/> -->
 			<a href=#contact>Contact Me</a>
+		</nav>
+	<div class=container>
+		<div id=left>
+			<img src="left.png" width="80%">
 		</div>
-
-		<div id=heading>
-			<h1> HI, <br/> Click/Hover to see who I am <br/><div id=wisdom>OMODIAGBE WISDOM <br/> I am a freelance software developer</div></h1>
-		</div>
+		<div id = right>
+			<img src="left.png" width="80%">
+		</div>		
 	</div>
 	</header>
-	<div><img src="code.jpg"></div>
+
+	<div id=heading>
+			<h1><img src="nerd.png"> <br/> HI, I am <br/><span id=name>OMODIAGBE WISDOM</span> <br/> I am a freelance software developer</h1>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 	<div id=about>
 		<h3> ABOUT ME </h3>
 		<p class=pad>My name is Omodiagbe Wisdom. 
@@ -93,17 +36,24 @@
 		You can see my programming skills below.
 		</p>
 		<div id=skills>
-		<h4> Skills and Languages </h4>
-		<ul>
-			<li> Python </li>
-			<li> C++</li>
-			<li> HTML, CSS, JavaScript</li>
-			<li> Machine Learning </li>
-			<li> Data Manipulation </li>
-		</ul>
+		<h4> <span id=red> Skills </span><span id=yellow> and </span><span id=blue> Languages </span></h4>
+		<div id=codes>
+			<div id=py>
+				<img src="python-small.png">
+			</div>
+			<div>
+				<img id=c src="c-small.png">
+			</div>
+			<div>
+				<img id=web src="web-small.png">
+			</div>
+		</div>
 		</div> 
 		
 	</div>
+	<br>
+	<br>
+	<br>
 	<hr/>
 	<!---
 	<div id=projects>
