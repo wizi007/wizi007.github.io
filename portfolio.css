@@ -1,24 +1,28 @@
-
+/*
 @keyframes imageShift {
 	0% {background-image: url("img5.jpg");}
 	20% {background-image: url("img5.jpg");}
 	100% {background-image: url("img3.jpg");}
 	
-}
+}*/
 
-.container {
+#container {
 	display: flex;
 	height: 90%;
+	/*
     animation-name: imageShift;
     animation-duration: 20s;
     animation-timing-function: ease-out;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    */
+    background-image: url("img1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     justify-content: space-between;
+    transition: background-image 1s linear;
 }
 
 
@@ -54,16 +58,28 @@
 
 body{
 	background: -webkit-linear-gradient(#000000 20%, #333333 40%, #666666 60%, #999999 80%, #cccccc 100%);
+	cursor: pointer;
 }
 
 nav{
-	display: block;
-	position: relative;
-	top: 5%;
-	left: 90%;
-	width: 8%;
-	padding: 1%;
+	display: flex;
+	justify-content: space-around;
 }
+
+a{
+	text-decoration: none;
+	color: white;
+	font-size: 20pt;
+}
+
+a:active{
+	color: grey;
+}
+
+a:hover{
+	color: grey;
+}
+
 
 
 #heading{
@@ -90,25 +106,28 @@ nav{
 #py{
 	transform: rotate(-20deg);
 	width: 50%;
+	transition: transform 1s linear;
 }
 #py:hover{
-	opacity: 0.2;
+	transform: rotate(20deg);
 }
 
 #c{
 	transform: rotate(30deg);
 	width: 80%;
+	transition: transform 1s linear;
 }
 #c:hover{
-	opacity:0.2;
+	transform: rotate(-30deg);
 }
 
 #web{
 	transform: rotate(-10deg);
 	width: 60%;
+	transition: transform 1s linear;
 }
 #web:hover{
-	opacity:0.2;
+	transform: rotate(10deg);
 }
 
 @font-face{
@@ -149,3 +168,22 @@ h4{
 #blue{
 	color: blue;
 }
+.white{
+	color: white;
+}
+
+#contact{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+/*
+#whatsapp, #gmail, #phone, #git{
+	height = 20px;
+}
+#contact img{
+	max-width: 10%;
+	height: auto;
+}
+*/
