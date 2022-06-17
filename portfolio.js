@@ -19,3 +19,8 @@ function nextslide(){
 	}
 	display(x);
 }
+
+function slideShow(){
+	setTimeout(nextslide, 3000);
+}
+
